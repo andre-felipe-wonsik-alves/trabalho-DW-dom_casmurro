@@ -1,0 +1,100 @@
+@import url("fontes/Inter-VariableFont_slnt\,wght.ttf");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+:root{
+    /* paletÃ£o */
+--branco: white;
+--preto: black;
+
+--fonte_padrao:"Inter", sans-serif;
+}
+body{
+    font-family: var(--fonte_padrao);
+}
+a{
+    text-decoration: none;
+    color: var(--preto);
+
+    display: flex;
+    align-items: center;
+}
+.aberto{
+display: flex;
+width: 100%;
+height: 1080px;
+justify-content: center;
+background-color: white;
+align-items: center;
+}
+.geral{
+display: flex;
+flex-direction: row;
+width: 1150px;
+height: 800px;
+background-color: black;
+align-items: center;
+}
+.foto{
+display: flex;
+width: 852px;
+height: 1068;
+background-color: var(--branco);
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.comentarios_curtidas{
+display: flex;
+width: 500px;
+height: 800px;
+background-color: white;
+flex-direction: column;
+justify-content: bottom;
+justify-content: space-between;
+border-bottom: solid 1px gray; 
+border-right: solid 1px gray ;
+border-left: solid 1px gray;
+}
+#bentinho{
+height: 100%;
+width: 100%;
+}
+a > #icon_bentinho{
+height: 50px ;
+width: 70px;
+border-radius: 100%;
+padding: 10px;
+}
+#icon{
+display: flex;
+flex-direction: row;
+align-items: center;
+border-bottom: solid 1px gray; 
+border-top: solid 1px gray;
+}
+
+.comentarioTF{
+flex-direction: column;
+display: flex;
+background-color: white;
+justify-content: space-between;
+border-top: solid 1px gray;
+}
+#txt{
+padding-left: 15px;
+}
+.aberto>.geral>.comentarios_curtidas>p{
+padding: 140px;
+opacity: 0.5;
+}
+.descricao{
+    padding: 10px;
+}
+.descricao>p{
+    line-height: 20px;
+}
+.foto>figure>img{
+    width: 90%;
+    height: 60%;
+}
